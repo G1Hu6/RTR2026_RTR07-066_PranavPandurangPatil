@@ -1,0 +1,46 @@
+cl.exe /c /EHsC /I C:\freeglut\include FileName.cpp
+
+link.exe FileName.obj /LIBPATH:C:\freeglut\lib\x64 freeglut.lib /SUBSYSTEM:CONSOLE
+
+FileName.exe
+
+
+ Run these in order:
+
+  1. Start DB + generate client:
+  cd D:\code\Freelance\recovally_admin_backend\src\api
+  npx prisma migrate dev --name add_provider_kyc
+  npx prisma generate
+
+  2. TypeScript check:
+  cd D:\code\Freelance\recovally_admin_backend
+  npm run build
+
+  That's it. Migration creates provider_kyc_verifications table and adds the relation. Generate updates the Prisma client types. Build confirms no TS errors.
+
+  If build fails, paste the errors here and I'll fix them.
+
+✻ Crunched for 5s
+
+> and also for the latest code that i pulled from main for this also i do not run migration ? is this ok to directly run this ?
+
+● Safe to run directly. prisma migrate dev applies all pending migrations in order — it'll first apply whatever came from main, then create + apply the new KYC one.
+
+  Correct sequence:
+
+  # Step 1 — apply everything (existing + new KYC)
+  npx prisma migrate dev --name add_provider_kyc
+
+  # Step 2 — regenerate client
+  npx prisma generate
+
+  If there are conflicts (e.g. your local DB has drift from manual changes), Prisma will warn you. If that happens, run:
+
+  npx prisma migrate dev --name add_provider_kyc
+  # Prisma asks: "reset?" — say yes only if your local dev data is disposable
+
+  In practice for a dev machine this is always fine. Production would use prisma migrate deploy instead (no resets, applies only unapplied migrations in order).
+
+✻ Baked for 15s
+
+─────────────────────
