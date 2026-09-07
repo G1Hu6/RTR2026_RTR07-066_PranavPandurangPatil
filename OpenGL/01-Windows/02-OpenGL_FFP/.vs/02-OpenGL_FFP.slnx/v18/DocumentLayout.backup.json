@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\01-Ortho\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:03-BWTriangle\\01-Ortho\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\02-Perspective\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:03-BWTriangle\\02-Perspective\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\04-BWRectangle\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:04-BWRectangle\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\03-BW\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:03-BWTriangle\\03-BW\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\02-Triangle\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02-Triangle\\OGL.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\02-Triangle\\OGL_FreeGLUT.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:02-Triangle\\OGL_FreeGLUT.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OGL.c",
+              "DocumentMoniker": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\04-BWRectangle\\OGL.c",
+              "RelativeDocumentMoniker": "04-BWRectangle\\OGL.c",
+              "ToolTip": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\04-BWRectangle\\OGL.c",
+              "RelativeToolTip": "04-BWRectangle\\OGL.c",
+              "ViewState": "AgIAAJ4BAAAAAAAAAAAAAKUBAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-06T13:51:28.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OGL.c",
+              "DocumentMoniker": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\02-Perspective\\OGL.c",
+              "RelativeDocumentMoniker": "03-BWTriangle\\02-Perspective\\OGL.c",
+              "ToolTip": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\02-Perspective\\OGL.c",
+              "RelativeToolTip": "03-BWTriangle\\02-Perspective\\OGL.c",
+              "ViewState": "AgIAAJgBAAAAAAAAAAAgwKYBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-06T13:13:26.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OGL.c",
+              "DocumentMoniker": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\01-Ortho\\OGL.c",
+              "RelativeDocumentMoniker": "03-BWTriangle\\01-Ortho\\OGL.c",
+              "ToolTip": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\01-Ortho\\OGL.c",
+              "RelativeToolTip": "03-BWTriangle\\01-Ortho\\OGL.c",
+              "ViewState": "AgIAAJEBAAAAAAAAAAAgwI8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-06T12:27:41.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OGL.c",
+              "DocumentMoniker": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\03-BW\\OGL.c",
+              "RelativeDocumentMoniker": "03-BWTriangle\\03-BW\\OGL.c",
+              "ToolTip": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\03-BWTriangle\\03-BW\\OGL.c",
+              "RelativeToolTip": "03-BWTriangle\\03-BW\\OGL.c",
+              "ViewState": "AgIAADgBAAAAAAAAAAAAAHwBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-06T12:26:13.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OGL.c",
+              "DocumentMoniker": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\02-Triangle\\OGL.c",
+              "RelativeDocumentMoniker": "02-Triangle\\OGL.c",
+              "ToolTip": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\02-Triangle\\OGL.c",
+              "RelativeToolTip": "02-Triangle\\OGL.c",
+              "ViewState": "AgIAAIMBAAAAAAAAAAAAAJoBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-05T18:10:22.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OGL_FreeGLUT.c",
+              "DocumentMoniker": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\02-Triangle\\OGL_FreeGLUT.c",
+              "RelativeDocumentMoniker": "02-Triangle\\OGL_FreeGLUT.c",
+              "ToolTip": "D:\\code\\RTR_Projects\\RTR2026_RTR07-066_PranavPandurangPatil\\OpenGL\\01-Windows\\02-OpenGL_FFP\\02-Triangle\\OGL_FreeGLUT.c",
+              "RelativeToolTip": "02-Triangle\\OGL_FreeGLUT.c",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAG8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-05T18:10:13.627Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

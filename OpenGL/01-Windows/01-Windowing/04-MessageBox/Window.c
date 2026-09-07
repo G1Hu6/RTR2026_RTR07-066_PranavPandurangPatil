@@ -1,6 +1,6 @@
 /*
  * ------------------------------------------------------------- Holy Code ---------------------------------------------------------
- * Adding My ICON
+ * Showing Message Box
  * Shri Ganeshay Namah
  */
 
@@ -78,6 +78,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
 		TranslateMessage(&msg);
 		DispatchMessage(&msg);
 	}
+	
+	TCHAR str[255];
+	wsprintf(str, TEXT("%d"), (int)msg.wParam);
+	// MessageBox(hwnd, str, TEXT("WPARAM"), MB_OK);
+	// This message box is not visible because this window is destroyed here.we are passing hwnd of destroyed window.
+	MessageBox(NULL, str, TEXT("WPARAM"), MB_OK); // pass NULL as first parameter
 
 	return((int)msg.wParam);
 }
@@ -87,8 +93,44 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam) // 
 	// code
 	switch(iMsg)
 	{
+		case WM_CREATE: 
+			MessageBox(hwnd, TEXT("WM_CREATE is Received"), TEXT("Message"), MB_OK);
+			break;
+		case WM_SETFOCUS:
+                        break;
+		case WM_KILLFOCUS:
+                        //MessageBox(hwnd, TEXT("WM_CREATE is Received"), TEXT("Message"), MB_OK);
+                        break;
+		case WM_SIZE:
+                        MessageBox(hwnd, TEXT("WM_SIZE is Received"), TEXT("Message"), MB_OK);
+                        break;
+		case WM_KEYDOWN: // key press message
+                        switch(wParam)
+			{
+				case VK_ESCAPE: // virtual key code
+					MessageBox(hwnd, TEXT("ESCAPE key is Pressed"), TEXT("Message"), MB_OK);
+					break;
+				default:
+					break;				
+			}
+                        break;
+		case WM_CHAR: // alphabate press message
+			switch(wParam)
+			{
+				case 'F':
+				case 'f':
+					MessageBox(hwnd, TEXT("F key is Pressed"), TEXT("Message"), MB_OK);
+					break;
+				default:
+					break;
+			}
+			break;
+		case WM_CLOSE:
+			MessageBox(hwnd, TEXT("WM_CLOSE is Received"), TEXT("Message"), MB_OK);
+			break;
 		case WM_DESTROY:
-			PostQuitMessage(0);
+			MessageBox(hwnd, TEXT("WM_DESTROY is Received"), TEXT("Message"), MB_OK);
+			PostQuitMessage(18);
 			break;
 		default:
 			break;
