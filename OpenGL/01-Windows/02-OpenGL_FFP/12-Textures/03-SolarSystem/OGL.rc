@@ -1,0 +1,7 @@
+#include "OGL.h"
+
+MYCHAKARAICON ICON Chakara.ico
+IDBITMAP_SUN BITMAP texture_sun.bmp
+IDBITMAP_EARTH BITMAP texture_earth.bmp
+IDBITMAP_MOON BITMAP texture_moon.bmp
+
