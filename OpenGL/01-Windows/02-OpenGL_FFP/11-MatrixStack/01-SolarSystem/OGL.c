@@ -42,8 +42,9 @@ BOOL bEscapeKeyIsPressed = FALSE;
 GLfloat angleOfPyramid = 0.0f;
 GLfloat angleOfCube = 0.0f;
 
-GLfloat year = 0.0f;
-GLfloat day = 0.0f;
+int year = 0;
+int day = 0;
+int month = 0;
 
 GLUquadric *quadric = NULL;
 
@@ -247,6 +248,24 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam) // 
 						bFullScreen = FALSE;
 					}
 					break;
+				case 'D':
+					day = (day + 6) % 360;
+					break;
+				case 'd':
+					day = (day - 6) % 360; 
+					break;
+				case 'Y':
+					year = (year + 3) % 360;
+					break;
+				case 'y':
+					year = (year - 3) % 360;
+					break;
+				case 'M':
+                                        month = (month + 1) % 360;
+                                        break;
+                                case 'm':
+                                        month = (month - 1) % 360;
+                                        break;
 				default:
 					break;
 			}
@@ -448,7 +467,7 @@ void Render()
 	
 	gluSphere(
 		quadric, 
-		0.75f, // GLfloat - Radius 
+		0.8f, // GLfloat - Radius 
 		30, // int - Slic
 		30 // int - Stacks
 	); // Sun
@@ -459,23 +478,50 @@ void Render()
 	glPushMatrix();
 
 	// Astronomical Rotation
-	glRotatef(year, 0.0f, 1.0f, 0.0f); // Rovoluation of Earth wrt Sun (Around Sun)
-	glTranslatef(1.5f, 0.0f, 0.0f);
+	glRotatef((GLfloat)year, 0.0f, 1.0f, 0.0f); // Rovoluation of Earth wrt Sun (Around Sun)
+	glTranslatef(2.0f, 0.0f, 0.0f);
 
 	// Butification
 	glRotatef(90.0f, 1.0f, 0.0f, 0.0f); // Butification Rotation
-	glRotatef(day, 0.0f, 0.0f, 1.0f); // Astronomical Rotation of Earth wrt Self (Around Self)
+	glRotatef((GLfloat)day, 0.0f, 0.0f, 1.0f); // Astronomical Rotation of Earth wrt Self (Around Self)
 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); // point -> quad -> polygon
 	glColor3f(0.4f, 0.9f, 1.0f); // Blue Color
 	
 	gluSphere(
 		quadric, 
-		0.2f, // GLfloat - Radius 
+		0.4f, // GLfloat - Radius 
 		20, // int - Slic
 		20 // int - Stacks
 	); // Earth
 
 	glPopMatrix();
+
+	
+	// ------------------------ 3. MOON ------------------------------
+        glPushMatrix();
+
+        // Astronomical Rotation
+	
+        glRotatef((GLfloat)year, 0.0f, 1.0f, 0.0f); // Rovoluation of Moon wrt Sun (Around Sun)
+        glTranslatef(2.0f, 0.0f, 0.0f);
+
+        glRotatef((GLfloat)day, 0.0f, 1.0f, 0.0f); // Rovoluation of Moon wrt Earth (Around Earth)
+	glTranslatef(0.65f, 0.0f, 0.0f);
+
+        // Butification
+        glRotatef(90.0f, 1.0f, 0.0f, 0.0f); // Butification Rotation
+        glRotatef((GLfloat)month, 0.0f, 0.0f, 1.0f); // Astronomical Rotation of Moon wrt Self (Around Self)
+        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); // point -> quad -> polygon
+        glColor3f(1.0f, 1.0f, 1.0f); // White Color
+
+        gluSphere(
+                quadric,
+                0.1f, // GLfloat - Radius
+                10, // int - Slic
+                10 // int - Stacks
+        ); // Moon
+
+        glPopMatrix();
 
 	// 2 Double Buffring
 	SwapBuffers(ghdc);
@@ -485,19 +531,16 @@ void Update()
 {
 	// code
 	// fprintf(gpFile, "PPP:Update() function called... \n");
-	day = (day + 0.06f);
-	year = (year + 0.1f);
-	/*
-	if(day > 360)
+	angleOfPyramid += 0.1f;
+	angleOfCube += 0.1f;
+	if(angleOfPyramid > 360.0f)
 	{
-		day = 0;
+		angleOfPyramid = 0.0f;
 	}
-	if(year > 360)
+	if(angleOfCube > 360.0f)
 	{
-		year = 0;
+		angleOfCube = 0.0f;
 	}
-	*/
-	
 }
 
 void Uninitialize()
