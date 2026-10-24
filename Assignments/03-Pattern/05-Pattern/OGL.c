@@ -443,11 +443,10 @@ void Render()
 
 	for(int i = 0; i < n * 2; i++)
 	{
-		if(i < n / 2)
+		if(i < n)
 		{
 			glBegin(GL_LINE_LOOP);
 			glVertex3f(ix, -iy, 0.0f);
-			if()
 			glVertex3f(x + diff, y, 0.0f);
 			glVertex3f(x, y, 0.0f);
 			glEnd();
@@ -457,8 +456,8 @@ void Render()
 		{
 			glBegin(GL_LINE_LOOP);
                         glVertex3f(ix, -iy, 0.0f);
-                        glVertex3f(-x, y + diff, 0.0f);
-                        glVertex3f(-x, y, 0.0f);
+                        glVertex3f(-ix, y + diff, 0.0f);
+                        glVertex3f(-ix, y, 0.0f);
                         glEnd();
 			y += diff;
 		}
